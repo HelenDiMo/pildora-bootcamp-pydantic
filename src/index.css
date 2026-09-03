@@ -1,0 +1,73 @@
+:root {
+  --ink-black: #14161f;
+  --ink-black-soft: #1c1f2c;
+  --paper: #ede4ce;
+  --paper-line: #cdc0a0;
+  --stamp-red: #b23a3a;
+  --stamp-red-bright: #d4574f;
+  --approved-green: #3e7c5a;
+  --approved-green-bright: #58a67c;
+  --text-on-dark: #e8e6de;
+  --text-on-dark-dim: #9b9c8f;
+  --text-on-paper: #26241c;
+  --text-on-paper-dim: #6b6650;
+
+  --font-display: "IBM Plex Serif", Georgia, serif;
+  --font-mono: "IBM Plex Mono", "SF Mono", monospace;
+
+  --border-thin: 1px solid var(--paper-line);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--ink-black);
+  color: var(--text-on-dark);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: var(--font-mono);
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--stamp-red);
+  color: var(--text-on-dark);
+}
+
+/* Respeta la preferencia de reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--stamp-red-bright);
+  outline-offset: 2px;
+}
