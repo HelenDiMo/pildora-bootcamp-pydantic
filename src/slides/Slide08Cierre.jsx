@@ -17,7 +17,7 @@ export default function Slide08Cierre() {
         al entrar los datos.
       </p>
       <div className="cover-stamp cover-stamp--approved">
-        <span>Trámite completado · Equipo 4</span>
+        <span>Trámite completado</span>
       </div>
     </Slide>
   );

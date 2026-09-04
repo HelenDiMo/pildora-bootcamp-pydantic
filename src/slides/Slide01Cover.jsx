@@ -13,7 +13,7 @@ export default function Slide01Cover() {
         construir esa inspección en Python.
       </p>
       <div className="cover-stamp">
-        <span>Formulario oficial · Uso Educativo</span>
+        <span>Formulario oficial · uso educativo</span>
       </div>
     </Slide>
   );
