@@ -17,7 +17,7 @@ async function loadPyodideOnce(onStatus) {
     onStatus("Instalando pydantic…");
     await pyodide.loadPackage("micropip");
     const micropip = pyodide.pyimport("micropip");
-    await micropip.install("pydantic");
+    await micropip.install(["pydantic", "email-validator"]);
     onStatus("listo");
     pyodideSingleton = pyodide;
     return pyodide;
