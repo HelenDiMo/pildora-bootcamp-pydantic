@@ -23,7 +23,7 @@ const SLIDES = [
 
 export default function App() {
   const [index, setIndex] = useState(0);
-
+  
   const goTo = useCallback((next) => {
     setIndex((current) => {
       const clamped = Math.max(0, Math.min(SLIDES.length - 1, next));
@@ -87,8 +87,10 @@ export default function App() {
       </nav>
 
       <div className="deck-progress-label">
-        {String(index + 1).padStart(2, "0")} / {String(SLIDES.length).padStart(2, "0")}
+        {String(index + 1).padStart(2, "0")} /{" "}
+        {String(SLIDES.length).padStart(2, "0")}
       </div>
     </div>
   );
+
 }
