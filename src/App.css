@@ -137,6 +137,27 @@
   white-space: pre;
 }
 
+.code-block code,
+.demo-code code {
+  background: none;
+  padding: 0;
+}
+
+/* Tema de resaltado de sintaxis (estilo VSCode Dark+) */
+.token.comment { color: #6a9955; font-style: italic; }
+.token.keyword { color: #c586c0; }
+.token.builtin { color: #4ec9b0; }
+.token.class-name { color: #4ec9b0; }
+.token.decorator { color: #dcdcaa; }
+.token.function { color: #dcdcaa; }
+.token.string { color: #ce9178; }
+.token.number { color: #b5cea8; }
+.token.operator { color: #d4d4d4; }
+.token.punctuation { color: #d4d4d4; }
+.token.boolean { color: #569cd6; }
+.token.property { color: #9cdcfe; }
+.token.parameter { color: #9cdcfe; }
+
 /* ---------- Layout helpers ---------- */
 
 .three-col {

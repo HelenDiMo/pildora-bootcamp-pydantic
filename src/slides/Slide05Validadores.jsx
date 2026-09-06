@@ -1,11 +1,12 @@
 import Slide from "../components/Slide.jsx";
+import CodeBlock from "../components/CodeBlock.jsx";
 
 export default function Slide05Validadores() {
   return (
     <Slide code="VGN-0005" eyebrow="Reglas propias" wide>
       <h2 className="slide-title">Cuando la regla no es un tipo estándar</h2>
       <div className="two-col">
-        <pre className="code-block">
+        <CodeBlock>
 {`@field_validator("nombre")
 @classmethod
 def nombre_no_vacio(cls, v):
@@ -15,7 +16,7 @@ def nombre_no_vacio(cls, v):
             "estar vacío"
         )
     return v.strip().title()`}
-        </pre>
+        </CodeBlock>
         <ul className="check-list">
           <li>
             <strong>@field_validator</strong> — lógica de validación propia,

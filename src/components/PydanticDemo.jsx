@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePyodide } from "../usePyodide.js";
 import Stamp from "./Stamp.jsx";
+import CodeBlock from "./CodeBlock.jsx";
 
 const PY_MODEL = `from pydantic import BaseModel, Field, EmailStr, field_validator
 from typing import Literal
@@ -37,7 +38,6 @@ export default function PydanticDemo() {
   useEffect(() => {
     if (status !== "ready") return;
     const py = pyodide.current;
-    py.runPython(PY_MODEL).valueOf?.();
     try {
       py.runPython(PY_MODEL);
       setModelReady(true);
@@ -160,7 +160,7 @@ json.dumps(_salida)
         <div className="demo-panel__header demo-panel__header--dark">
           <span>modelo.py</span>
         </div>
-        <pre className="demo-code">{PY_MODEL}</pre>
+        <CodeBlock className="demo-code">{PY_MODEL}</CodeBlock>
 
         <div className="demo-panel__header demo-panel__header--dark">
           <span>salida del intérprete (Python real, en tu navegador)</span>
