@@ -1,12 +1,13 @@
 :root {
-  --ink-black: #14161f;
-  --ink-black-soft: #1c1f2c;
-  --paper: #ede4ce;
-  --paper-line: #cdc0a0;
+  --ink-black: #1c1a1a;
+  --ink-black-soft: #262424;
+  --paper: #d5c5b3;
+  --paper-line: #5a6366;
   --stamp-red: #b23a3a;
   --stamp-red-bright: #d4574f;
-  --approved-green: #3e7c5a;
-  --approved-green-bright: #58a67c;
+  --approved-green: #4a5d4e;
+  --approved-green-bright: #72866f;
+  --accent-yellow: #f1c40f;
   --text-on-dark: #e8e6de;
   --text-on-dark-dim: #9b9c8f;
   --text-on-paper: #26241c;
@@ -54,8 +55,8 @@ a {
 }
 
 ::selection {
-  background: var(--stamp-red);
-  color: var(--text-on-dark);
+  background: var(--accent-yellow);
+  color: var(--text-on-paper);
 }
 
 /* Respeta la preferencia de reducir movimiento */
@@ -68,6 +69,6 @@ a {
 }
 
 :focus-visible {
-  outline: 2px solid var(--stamp-red-bright);
+  outline: 2px solid var(--accent-yellow);
   outline-offset: 2px;
 }

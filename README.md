@@ -8,6 +8,23 @@ Masterclass interactiva sobre desarrollo robusto y validación estricta de tipos
 - Pyodide (cargado desde CDN en `index.html`) + `micropip` para instalar `pydantic` en el navegador
 - CSS plano (sin framework), con tokens de diseño en `src/index.css`
 
+## Paleta de colores
+
+Inspirada en la estética burocrática Vogon (formularios, sellos, papeleo intergaláctico). Cada color tiene un origen y un uso semántico concreto — el rojo está reservado exclusivamente para errores/rechazos, nunca como decoración:
+
+| Variable CSS | Color | Hex | Origen / uso |
+|---|---|---|---|
+| `--ink-black` | ⬛ | `#1c1a1a` | Tinta de Sello — fondo principal de toda la web |
+| `--paper` | 🟫 | `#d5c5b3` | Papel Manila — fondo del formulario de la demo |
+| `--paper-line` | ◻️ | `#5a6366` | Gris Hormigón/Burocrático — bordes y separadores |
+| `--approved-green` / `--approved-green-bright` | 🟩 | `#4a5d4e` / `#72866f` | Verde Vogón — estado "aprobado", éxito |
+| `--accent-yellow` | 🟨 | `#f1c40f` | Amarillo Demolición — acento decorativo (títulos, viñetas, hover, foco) |
+| `--stamp-red` / `--stamp-red-bright` | 🟥 | `#b23a3a` / `#d4574f` | Reservado **solo** para errores/rechazo (sello "RECHAZADO", mensajes de `ValidationError`) |
+
+Tipografías: `IBM Plex Serif` (títulos) + `IBM Plex Mono` (todo lo demás), vía Google Fonts.
+
+Todos los tokens viven en `src/index.css` — cambiar un valor ahí lo actualiza en las 8 slides a la vez.
+
 ## Desarrollo local
 
 ```bash
