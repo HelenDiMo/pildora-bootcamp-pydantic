@@ -1,5 +1,5 @@
 import Slide from "../components/Slide.jsx";
-import archivoNotebook from "../docs/masterclass_pydantic_estudiantes_TODO.ipynb";
+import archivoNotebook from "../../docs/masterclass_pydantic_estudiantes_TODO.ipynb?url";
 
 export default function Slide08Cierre() {
   return (
