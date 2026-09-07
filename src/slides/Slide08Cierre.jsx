@@ -19,6 +19,13 @@ export default function Slide08Cierre() {
       <div className="cover-stamp cover-stamp--approved">
         <span>Trámite completado</span>
       </div>
+      <a
+        className="download-link"
+        href="docs\masterclass_pydantic_estudiantes_TODO.ipynb"
+        download
+      >
+        📥 Descargar el notebook del reto (.ipynb)
+      </a>
     </Slide>
   );
 }

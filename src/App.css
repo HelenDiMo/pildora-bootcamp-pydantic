@@ -131,6 +131,20 @@
   color: var(--text-on-dark-dim);
 }
 
+.download-link {
+  display: block;
+  margin-top: 1.5rem;
+  color: var(--accent-yellow);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.download-link:hover {
+  border-bottom-color: var(--accent-yellow);
+}
+
 /* ---------- Code blocks ---------- */
 
 .code-block {
