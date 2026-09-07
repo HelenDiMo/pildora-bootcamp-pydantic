@@ -1,6 +1,6 @@
-export default function Slide({ code, eyebrow, children, wide }) {
+export default function Slide({ code, eyebrow, children, wide, topAlign }) {
   return (
-    <section className={`slide ${wide ? "slide--wide" : ""}`}>
+    <section className={`slide ${wide ? "slide--wide" : ""} ${topAlign ? "slide--top" : ""}`}>
       <div className="slide__frame">
         <div className="slide__meta">
           <span className="slide__code">EXPEDIENTE {code}</span>
