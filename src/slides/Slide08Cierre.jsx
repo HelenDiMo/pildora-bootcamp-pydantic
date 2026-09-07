@@ -1,4 +1,5 @@
 import Slide from "../components/Slide.jsx";
+import archivoNotebook from "../docs/masterclass_pydantic_estudiantes_TODO.ipynb";
 
 export default function Slide08Cierre() {
   return (
@@ -19,10 +20,11 @@ export default function Slide08Cierre() {
       <div className="cover-stamp cover-stamp--approved">
         <span>Trámite completado</span>
       </div>
+
       <a
         className="download-link"
-        href="masterclass_pydantic_estudiantes_TODO.ipynb"
-        download
+        href={archivoNotebook}
+        download="masterclass_pydantic_estudiantes_TODO.ipynb"
       >
         📥 Descargar el notebook del reto (.ipynb)
       </a>
