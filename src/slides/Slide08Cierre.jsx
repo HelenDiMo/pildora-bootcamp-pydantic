@@ -21,7 +21,7 @@ export default function Slide08Cierre() {
       </div>
       <a
         className="download-link"
-        href="public\masterclass_pydantic_estudiantes_TODO.ipynb"
+        href="\public\masterclass_pydantic_estudiantes_TODO.ipynb"
         download
       >
         📥 Descargar el notebook del reto (.ipynb)
