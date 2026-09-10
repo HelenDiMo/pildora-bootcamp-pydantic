@@ -9,7 +9,7 @@ from typing import Literal
 class PasajeroGalactico(BaseModel):
     nombre: str = Field(..., min_length=1, max_length=50)
     edad: int = Field(..., gt=0, le=1000)
-    especie: Literal["humano", "vogon", "betelgeusiano", "androide"]
+    especie: Literal["Humano", "Vogon", "Betelgeusiano", "Androide"]
     contacto: EmailStr
 
     @field_validator("nombre")
@@ -19,12 +19,12 @@ class PasajeroGalactico(BaseModel):
             raise ValueError("el nombre no puede estar vacío")
         return v.strip().title()`;
 
-const ESPECIES = ["humano", "vogon", "betelgeusiano", "androide"];
+const ESPECIES = ["Humano", "Vogon", "Betelgeusiano", "Androide"];
 
 const initialForm = {
   nombre: "Arthur Dent",
   edad: "30",
-  especie: "humano",
+  especie: "Humano",
   contacto: "arthur@tierra.gal",
 };
 
@@ -74,7 +74,7 @@ json.dumps(_salida)
           setResult({ stamp: "ok", output: parsed.repr });
         } else {
           const lines = parsed.errors.map(
-            (e) => `• ${e.loc.join(".")}: ${e.msg}`
+            (e) => `• ${e.loc.join(".")}: ${e.msg}`,
           );
           setResult({ stamp: "error", output: lines.join("\n") });
         }
@@ -82,7 +82,7 @@ json.dumps(_salida)
         setResult({ stamp: "error", output: String(err) });
       }
     },
-    [status, modelReady]
+    [status, modelReady],
   );
 
   useEffect(() => {
@@ -149,8 +149,8 @@ json.dumps(_salida)
               status !== "ready"
                 ? "checking"
                 : result.stamp === "idle"
-                ? "checking"
-                : result.stamp
+                  ? "checking"
+                  : result.stamp
             }
           />
         </div>
