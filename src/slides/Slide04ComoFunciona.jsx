@@ -13,8 +13,8 @@ export default function Slide04ComoFunciona() {
     )
     edad: int = Field(..., gt=0, le=1000)
     especie: Literal[
-        "humano", "vogon",
-        "betelgeusiano", "androide"
+        "Humano", "Vogon",
+        "Betelgeusiano", "Androide"
     ]`}
         </CodeBlock>
         <ul className="check-list">
