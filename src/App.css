@@ -211,6 +211,15 @@
   align-items: start;
 }
 
+.slide-image {
+  width: 100%;
+  max-width: 3500px;
+  height: auto;
+  border-radius: 4px;
+  justify-self: center;
+  align-self: center;
+}
+
 .check-list {
   list-style: none;
   margin: 0;
