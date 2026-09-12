@@ -12,14 +12,14 @@ Masterclass interactiva sobre desarrollo robusto y validación estricta de tipos
 
 Inspirada en la estética burocrática Vogon (formularios, sellos, papeleo intergaláctico). Cada color tiene un origen y un uso semántico concreto — el rojo está reservado exclusivamente para errores/rechazos, nunca como decoración:
 
-| Variable CSS                                   | Color                                                                                                                 | Hex                   | Origen / uso                                                                               |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------ |
-| `--ink-black`                                  | ![#1c1a1a](https://img.shields.io/badge/-%231c1a1a-1c1a1a)                                                            | `#1c1a1a`             | Tinta de Sello — fondo principal de toda la web                                            |
-| `--paper`                                      | ![#d5c5b3](https://img.shields.io/badge/-%23d5c5b3-d5c5b3)                                                            | `#d5c5b3`             | Papel Manila — fondo del formulario de la demo                                             |
-| `--paper-line`                                 | ![#5a6366](https://img.shields.io/badge/-%235a6366-5a6366)                                                            | `#5a6366`             | Gris Hormigón/Burocrático — bordes y separadores                                           |
-| `--approved-green` / `--approved-green-bright` | ![#4a5d4e](https://img.shields.io/badge/-%234a5d4e-4a5d4e) ![#72866f](https://img.shields.io/badge/-%2372866f-72866f) | `#4a5d4e` / `#72866f` | Verde Vogón — estado "aprobado", éxito                                                     |
-| `--accent-yellow`                              | ![#f1c40f](https://img.shields.io/badge/-%23f1c40f-f1c40f)                                                            | `#f1c40f`             | Amarillo Demolición — acento decorativo (títulos, viñetas, hover, foco)                    |
-| `--stamp-red` / `--stamp-red-bright`           | ![#b23a3a](https://img.shields.io/badge/-%23b23a3a-b23a3a) ![#d4574f](https://img.shields.io/badge/-%23d4574f-d4574f) | `#b23a3a` / `#d4574f` | Reservado **solo** para errores/rechazo (sello "RECHAZADO", mensajes de `ValidationError`) |
+| Variable CSS | Color | Origen / uso |
+|---|---|---|
+| `--ink-black` | ![#1c1a1a](https://img.shields.io/badge/-%231c1a1a-1c1a1a) | Tinta de Sello — fondo principal de toda la web |
+| `--paper` | ![#d5c5b3](https://img.shields.io/badge/-%23d5c5b3-d5c5b3) | Papel Manila — fondo del formulario de la demo |
+| `--paper-line` | ![#5a6366](https://img.shields.io/badge/-%235a6366-5a6366) | Gris Hormigón/Burocrático — bordes y separadores |
+| `--approved-green` / `--approved-green-bright` | ![#4a5d4e](https://img.shields.io/badge/-%234a5d4e-4a5d4e) ![#72866f](https://img.shields.io/badge/-%2372866f-72866f) | Verde Vogón — estado "aprobado", éxito |
+| `--accent-yellow` | ![#f1c40f](https://img.shields.io/badge/-%23f1c40f-f1c40f) | Amarillo Demolición — acento decorativo (títulos, viñetas, hover, foco) |
+| `--stamp-red` / `--stamp-red-bright` | ![#b23a3a](https://img.shields.io/badge/-%23b23a3a-b23a3a) ![#d4574f](https://img.shields.io/badge/-%23d4574f-d4574f) | Reservado **solo** para errores/rechazo (sello "RECHAZADO", mensajes de `ValidationError`) |
 
 Tipografías: `IBM Plex Serif` (títulos) + `IBM Plex Mono` (todo lo demás), vía Google Fonts.
 
@@ -44,16 +44,13 @@ npm run preview   # para probar el build localmente
 ## Desplegar en Vercel
 
 **Opción rápida (CLI):**
-
 ```bash
 npm install -g vercel
 vercel
 ```
-
 Sigue las instrucciones; Vercel detecta automáticamente que es un proyecto Vite (framework: vite, build command `npm run build`, output directory `dist`).
 
 **Opción desde GitHub:**
-
 1. Sube este proyecto a un repo de GitHub.
 2. En vercel.com → "Add New Project" → importa el repo.
 3. Vercel detecta Vite automáticamente. No hace falta configurar nada más.
@@ -77,10 +74,14 @@ src/
 
 ## Navegación
 
-- Flechas ← →, Espacio, Page Up/Down
+- Flechas ←  →, Espacio, Page Up/Down
 - Puntos de progreso o flechas en pantalla (clicables)
 
 ## Notas
 
 - Pyodide se carga desde cdn.jsdelivr.net — necesita conexión a internet la primera vez.
 - El modelo Pydantic de la demo (Slide 6) vive tanto en `PydanticDemo.jsx` (como string de Python) como visualmente en el panel de código — si cambias uno, actualiza el otro.
+
+## 👥 Autoría
+
+Preparado por Elena Díaz - [@HelenDiMo](https://github.com/HelenDiMo) para el bloque de AI Engineering Bootcamp IA & Data Science de Somos F5
