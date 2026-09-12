@@ -2,7 +2,7 @@ import Slide from "../components/Slide.jsx";
 
 export default function Slide03QueEs() {
   return (
-    <Slide code="VGN-0003" eyebrow="La solución">
+    <Slide code="VGN-0004" eyebrow="La solución">
       <h2 className="slide-title">Pydantic es el inspector automático</h2>
       <p className="slide-lede">
         Defines la forma que deben tener tus datos una vez. Pydantic

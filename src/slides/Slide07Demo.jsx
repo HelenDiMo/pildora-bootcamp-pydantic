@@ -3,7 +3,7 @@ import PydanticDemo from "../components/PydanticDemo.jsx";
 
 export default function Slide06Demo() {
   return (
-    <Slide code="VGN-0006" eyebrow="Inspección en vivo" wide topAlign>
+    <Slide code="VGN-0007" eyebrow="Inspección en vivo" wide topAlign>
       <h2 className="slide-title">Rellena el formulario. Rompe las reglas.</h2>
       <p className="slide-lede slide-lede--tight">
         Esto no es una simulación: es Python + Pydantic ejecutándose de

@@ -2,23 +2,25 @@ import { useCallback, useEffect, useState } from "react";
 import "./App.css";
 
 import Slide01Cover from "./slides/Slide01Cover.jsx";
-import Slide02Problema from "./slides/Slide02Problema.jsx";
-import Slide03QueEs from "./slides/Slide03QueEs.jsx";
-import Slide04ComoFunciona from "./slides/Slide04ComoFunciona.jsx";
-import Slide05Validadores from "./slides/Slide05Validadores.jsx";
-import Slide06Demo from "./slides/Slide06Demo.jsx";
-import Slide07UsoReal from "./slides/Slide07UsoReal.jsx";
-import Slide08Cierre from "./slides/Slide08Cierre.jsx";
+import Slide02Vogones from "./slides/Slide02Vogones.jsx";
+import Slide03Problema from "./slides/Slide03Problema.jsx";
+import Slide04QueEs from "./slides/Slide04QueEs.jsx";
+import Slide05ComoFunciona from "./slides/Slide05ComoFunciona.jsx";
+import Slide06Validadores from "./slides/Slide06Validadores.jsx";
+import Slide07Demo from "./slides/Slide07Demo.jsx";
+import Slide08UsoReal from "./slides/Slide08UsoReal.jsx";
+import Slide09Cierre from "./slides/Slide09Cierre.jsx";
 
 const SLIDES = [
   Slide01Cover,
-  Slide02Problema,
-  Slide03QueEs,
-  Slide04ComoFunciona,
-  Slide05Validadores,
-  Slide06Demo,
-  Slide07UsoReal,
-  Slide08Cierre,
+  Slide02Vogones,
+  Slide03Problema,
+  Slide04QueEs,
+  Slide05ComoFunciona,
+  Slide06Validadores,
+  Slide07Demo,
+  Slide08UsoReal,
+  Slide09Cierre,
 ];
 
 export default function App() {

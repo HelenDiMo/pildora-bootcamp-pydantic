@@ -3,7 +3,7 @@ import CodeBlock from "../components/CodeBlock.jsx";
 
 export default function Slide04ComoFunciona() {
   return (
-    <Slide code="VGN-0004" eyebrow="Cómo funciona" wide>
+    <Slide code="VGN-0005" eyebrow="Cómo funciona" wide>
       <h2 className="slide-title">Un formulario, hecho clase</h2>
       <div className="two-col">
         <CodeBlock>

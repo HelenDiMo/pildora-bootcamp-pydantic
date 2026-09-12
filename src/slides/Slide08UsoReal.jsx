@@ -2,7 +2,7 @@ import Slide from "../components/Slide.jsx";
 
 export default function Slide07UsoReal() {
   return (
-    <Slide code="VGN-0007" eyebrow="Más allá de la nave">
+    <Slide code="VGN-0008" eyebrow="Más allá de la nave">
       <h2 className="slide-title">¿Dónde vive esto en el mundo real?</h2>
       <div className="three-col">
         <div className="three-col__item">

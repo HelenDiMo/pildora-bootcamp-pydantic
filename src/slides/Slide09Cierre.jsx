@@ -3,7 +3,7 @@ import archivoNotebook from "../../docs/masterclass_pydantic_estudiantes_TODO.ip
 
 export default function Slide08Cierre() {
   return (
-    <Slide code="VGN-0008" eyebrow="Cierre del expediente">
+    <Slide code="VGN-0009" eyebrow="Cierre del expediente">
       <h2 className="slide-title">Una regla nunca es neutral</h2>
       <p className="slide-lede">
         Cada restricción que escribimos refleja un supuesto sobre cómo{" "}

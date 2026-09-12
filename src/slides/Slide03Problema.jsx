@@ -3,7 +3,7 @@ import CodeBlock from "../components/CodeBlock.jsx";
 
 export default function Slide02Problema() {
   return (
-    <Slide code="VGN-0002" eyebrow="El problema">
+    <Slide code="VGN-0003" eyebrow="El problema">
       <h2 className="slide-title">Python confía. Demasiado.</h2>
       <p className="slide-lede">
         Un type hint como <code>edad: int</code> es una nota para humanos y

@@ -3,7 +3,7 @@ import CodeBlock from "../components/CodeBlock.jsx";
 
 export default function Slide05Validadores() {
   return (
-    <Slide code="VGN-0005" eyebrow="Reglas propias" wide>
+    <Slide code="VGN-0006" eyebrow="Reglas propias" wide>
       <h2 className="slide-title">Cuando la regla no es un tipo estándar</h2>
       <div className="two-col">
         <CodeBlock>
