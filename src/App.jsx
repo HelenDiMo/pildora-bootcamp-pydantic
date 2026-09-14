@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./App.css";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 import Slide01Cover from "./slides/Slide01Cover.jsx";
 import Slide02Vogones from "./slides/Slide02Vogones.jsx";
@@ -38,7 +38,10 @@ export default function App() {
     function onKeyDown(e) {
       const tag = e.target.tagName;
       const isTypingInField =
-        tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || e.target.isContentEditable;
+        tag === "INPUT" ||
+        tag === "TEXTAREA" ||
+        tag === "SELECT" ||
+        e.target.isContentEditable;
       if (isTypingInField) return; // no interceptar teclas mientras se rellena el formulario
 
       if (["ArrowRight", "PageDown", " "].includes(e.key)) {
@@ -96,8 +99,8 @@ export default function App() {
       </nav>
 
       <div className="deck-progress-label">
-        {String(index + 1).padStart(2, "0")} / {String(SLIDES.length).padStart(2, "0")}
-        
+        {String(index + 1).padStart(2, "0")} /{" "}
+        {String(SLIDES.length).padStart(2, "0")}
       </div>
     </div>
   );
