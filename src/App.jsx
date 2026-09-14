@@ -60,8 +60,9 @@ export default function App() {
 
   return (
     <div className="deck">
-      <CurrentSlide />
       <Analytics />
+      <CurrentSlide />
+      
 
       <nav className="deck-nav" aria-label="Navegación de slides">
         <button
