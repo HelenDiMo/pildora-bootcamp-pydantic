@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/next"
 
 import Slide01Cover from "./slides/Slide01Cover.jsx";
 import Slide02Vogones from "./slides/Slide02Vogones.jsx";
@@ -57,6 +58,7 @@ export default function App() {
   return (
     <div className="deck">
       <CurrentSlide />
+      <Analytics />
 
       <nav className="deck-nav" aria-label="Navegación de slides">
         <button
@@ -95,6 +97,7 @@ export default function App() {
 
       <div className="deck-progress-label">
         {String(index + 1).padStart(2, "0")} / {String(SLIDES.length).padStart(2, "0")}
+        
       </div>
     </div>
   );
